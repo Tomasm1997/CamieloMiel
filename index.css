@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(226, 180, 43);
+}
+
+button:hover{
+    background-color: rgb(226, 160, 44);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(248, 174, 54); }
+
+header{
+    background-color: rgba(226, 188, 35, 0.69);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 4px 35px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(58, 57, 57);
+}
+
+header a:hover{
+    color:  rgb(242, 121, 21);
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(226, 187, 35);
+    background-image: url("WhatsApp\ Image\ 2022-07-05\ at\ 12.27.16\ AM\ \(1\).jpeg");
+        background-repeat:round;
+    background-size:cover ;
+    background-position: center;
+    background-size: contain;
+    padding-top: 450px;
+    color: white;
+    height: 80vh;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 45px 12px;
+}
+
+#nuestros-productos{
+    background-color: rgb(248, 174, 54);
+    color: white;
+    text-align: center;
+    display:block;
+}
+
+#nuestros-productos .container{
+    padding: 150px 12px;
+    width:auto;
+    display:inline;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-productos p{
+    display: none;
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: contain;
+    padding: 100px;
+    margin: 15px;
+    border-radius: 15px;
+    display:inline;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("KILO.jpeg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("MEDIO.jpeg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("CUARTO.jpeg");
+
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 20px 10px;
+    padding-top:initial;
+    display:inline-table;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(226, 187, 35);
+    background-image: url("WhatsApp\ Image\ 2022-07-05\ at\ 12.27.16\ AM\ \(1\).jpeg");
+        background-repeat:round;
+    background-size:cover ;
+    background-position: center;
+    background-size: contain;
+    padding-top: 450px;
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(226, 220, 220);
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-camielo .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-camielo .texto{
+        text-align:center;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: block;
+        justify-content: center;
+    }
+
+    #somos-camielo h2{
+        margin-top: 2px;
+    }
+
+    #somos-camielo .img-container{
+        height: 50px;
+        width: 40px; 
+    }
+
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+    display:none;
+    }
+
+    #nuestros-productos h2{
+        font-size: 4em;
+    }
+
+    #nuestros-productos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta{
+        background-position: center center;
+        background-size:contain;
+        padding: 100px;
+        margin: 20px;
+        border-radius: 15px;
+        display:inline;}
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("KILO.jpeg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("MEDIO.jpeg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("CUARTO.jpeg");
+
+    }
+
+    #caracteristicas{
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+   
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    font-family: 'Karla', 'Arial', sans-serif;
+}
+.hidden{
+display:none;
+}
+#section3{
+padding:30px;
+background-color:#fff;
+max-width:800px;
+margin:0 auto;  
+}
+#section3 h1{
+    font-weight:normal;
+    color: #444;
+    font-size:64px;
+    text-align:center;
+}
+#contactForm{
+  font-family: 'Karla', 'Arial', sans-serif;
+}
+.form-wrapper .field-list {
+    line-height: normal;
+}
+.form-wrapper .field-list .field {
+    position: relative;
+    margin: 0 0 24px;
+}
+.form-wrapper .field-list .fields {
+    margin: 0 0 0 -2%;
+}
+.form-wrapper .field-list .fields .title, .form-wrapper .field-list .fields .description, .form-wrapper .field-list .fields .field, .form-wrapper .field-list .fields .field-error {
+    margin-left: 2%;
+}
+.form-wrapper .field-list .fields .field {
+    float: left;
+}
+.form-wrapper .field-list .fields.name .field {
+    width: 48%;
+}
+.form-wrapper .field-list .field .field-element {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0 4px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.form-wrapper .field-list .field .caption {
+    font-size: 12px;
+}
+fieldset{
+border:none;
+}
+.form-wrapper .field-list legend {
+    display: none;
+}
+input:focus{
+    background-color:#fff !important;
+    cursor: auto;
+}
+.form-button-wrapper{
+text-align:center;
+}
+.form-button-wrapper input.button{
+   background-color: #edd258;
+   color: black;
+   text-transform:uppercase;
+   font-family: 'Karla', 'Arial', sans-serif;
+   font-size:20px;
+   letter-spacing:2px;
+   border:none;
+   padding:1em 2.5em;
+   transition: all 0.2s ease;
+   border-radius:2px;
+}
+.form-button-wrapper input.button:hover{
+cursor:pointer;
+}
+.form-button-wrapper input.button:focus{
+   background-color: #dc7106 !important;
+   opacity:.85;
+}
+.social-icon{
+    padding-left: 96%;
+}
